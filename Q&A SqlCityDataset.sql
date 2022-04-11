@@ -64,9 +64,25 @@ id  |   Name		|CityCode|  District	|Population
 select * from city
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 --3 Query all columns for a city in CITY with the ID 1661
-Solution:
+--Solution:
 select * from city
 where id=1661
 
 ID   |	Name	|Countrycode|	district   |population
 1661 |	Sayama	|JPN	    |   Saitama	   |162472
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+--4 Query all attributes of every Japanese city in the CITY table. The COUNTRYCODE for Japan is JPN.
+select * from city
+where countrycode='JPN'
+
+
+ID   |	Name	|Countrycode|	district   |population
+1661 |	Sayama	|JPN	    |   Saitama	   |162472
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+--5 Query the names of all the Japanese cities in the CITY table. The COUNTRYCODE for Japan is JPN.
+select name from city 
+where countrycode='JPN'
+Name
+Sayama
