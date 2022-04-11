@@ -4,7 +4,6 @@ use practice
 --create table
 create table city(ID int,Name varchar(17),Countrycode varchar(3),district varchar(20),population int)
 
-https://s3.amazonaws.com/hr-challenge-images/8137/1449729804-f21d187d0f-CITY.jpg
 select * from city
 
 --insert values into city table
